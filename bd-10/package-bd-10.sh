@@ -36,6 +36,7 @@ rm -rf boringdroid_10.avd/*
 cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/boringdroid_10.ini .
 cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/boringdroid_10.avd .
 cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/config-boringdroid-avd.sh .
+cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/README.md .
 rm -rf boringdroid-10-system-images.zip
-zip -1rq boringdroid-10-system-images.zip system-images boringdroid_10.ini boringdroid_10.avd config-boringdroid-avd.sh
+zip -1rq boringdroid-10-system-images.zip system-images boringdroid_10.ini boringdroid_10.avd config-boringdroid-avd.sh README.md
 ls -l boringdroid-10-system-images.zip

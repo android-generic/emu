@@ -1,6 +1,7 @@
 echo "backup origin android-29 default x86_64 system images"
 mkdir -p ~/Android/Sdk/system-images/android-29/default/x86_64_bak
 rm -rf ~/Android/Sdk/system-images/android-29/default/x86_64_bak/*
+mkdir -p ~/Android/Sdk/system-images/android-29/default/x86_64
 cp -r ~/Android/Sdk/system-images/android-29/default/x86_64/* ~/Android/Sdk/system-images/android-29/default/x86_64_bak/
 rm -rf ~/Android/Sdk/system-images/android-29/default/x86_64/*
 echo "copy boringdroid 10 system images to android-29 default x86_64 directory"
