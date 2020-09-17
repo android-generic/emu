@@ -2,6 +2,8 @@
 
 It will overwrite `~/Android/Sdk/system-images/android-28/default/x86_64`, so you should back up it before using boringdroid 10 emulator images.
 
-From `~/Android/Sdk` we know it assumes the `ANDROID_SDK_ROOT` is `~/Android/Sdk`, the default sdk directory of Android Studio. And it also assumes `~/.android/avd` is the default avd directory of Android Studio.
+From `~/Android/Sdk` we know it assumes the `ANDROID_SDK_ROOT` is `~/Android/Sdk`, the default sdk directory of Android Studio.
 
-We just need run `./config-boringdroid-avd.sh` in current directory to configure boringdroid avd, and it will create an avd instance called `Boringdroid 10`. After that, we can see the `Boringdroid 10` avd instance in Android Studio's `AVD Manager window`. We just need `wipe data` and start it.
+We should create an avd instance from Android Studio with tablet template, such as pixel c, and pure android-29 system images (not any google play api version).
+And then, we should use files in `system-images` to replace same name files in `$ANDROID_SDK_ROOT/system-images/android-29/default/x86_64`. After that,
+we just need wipe avd data and restart it. To get better experience, we can use `landscape` for avd instance, and open `auto-rotate orientation` in settings.
