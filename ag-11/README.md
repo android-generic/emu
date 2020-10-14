@@ -1,6 +1,6 @@
-# Boringdroid 10 emulator images
+# AG 11 emulator images
 
-It will overwrite `~/Android/Sdk/system-images/android-28/default/x86_64`, so you should back up it before using boringdroid 10 emulator images.
+It will overwrite `~/Android/Sdk/system-images/android-28/default/x86_64`, so you should back up it before using ag 11 emulator images.
 
 From `~/Android/Sdk` we know it assumes the `ANDROID_SDK_ROOT` is `~/Android/Sdk`, the default sdk directory of Android Studio.
 

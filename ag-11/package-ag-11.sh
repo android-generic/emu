@@ -1,11 +1,12 @@
 #!/bin/bash
+#~ set -e
 
 source build/envsetup.sh
-lunch boringdroid_x86_64-userdebug
+lunch ag_x86_64-userdebug
 m
 echo $ANDROID_PRODUCT_OUT
 echo $ANDROID_BUILD_TOP
-MYPACKEDIMG=bd-emulator-package
+MYPACKEDIMG=ag-emulator-package
 
 mkdir -p $MYPACKEDIMG
 mkdir -p $MYPACKEDIMG/system-images
@@ -29,9 +30,9 @@ cp -rf $ANDROID_PRODUCT_OUT/userdata.img .
 cp -rf $ANDROID_PRODUCT_OUT/encryptionkey.img .
 cp -rf $ANDROID_PRODUCT_OUT/system/build.prop .
 cp -rf $ANDROID_PRODUCT_OUT/VerifiedBootParams.textproto .
-cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/source.properties .
+cp -rf $ANDROID_BUILD_TOP/vendor/android-generic/utils/emu/ag-11/source.properties .
 cd ..
-cp -rf $ANDROID_BUILD_TOP/bdtools/bd-10/README.md .
-rm -rf boringdroid-10-system-images.zip
-zip -1rq boringdroid-10-system-images.zip system-images README.md
-ls -l boringdroid-10-system-images.zip
+cp -rf $ANDROID_BUILD_TOP/vendor/android-generic/utils/emu/ag-11/README.md .
+rm -rf ag-11-system-images.zip
+zip -1rq ag-11-system-images.zip system-images README.md
+ls -l ag-11-system-images.zip
