@@ -1,7 +1,5 @@
 # AG-EMU 
-(forked from https://github.com/boringdroid/bdtools)
-
-The `agemu` is used to build portable emulator system images, and let user can run ag with emulator in Android Stduio. It also help `BoringdroidSystemUI` developer to develop `BoringdroidSystemUI` without downloading full source code.
+The `agemu` is used to build portable emulator system images, and let user can run ag with emulator in Android Studio.
 
 ## package ag 11
 
